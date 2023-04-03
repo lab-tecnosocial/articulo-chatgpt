@@ -1,0 +1,1 @@
+# lab-tecnosocial-articulo-chatgpt
