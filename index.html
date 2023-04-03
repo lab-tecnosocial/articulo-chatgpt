@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatGPT AI: Chatbots y el poder del lenguaje</title>
+    <title>ChatGPT: Chatbots y el poder del lenguaje</title>
     <style>
         /* General  */
         * {
@@ -22,7 +22,7 @@
 
         .text-block {
             padding: 4rem;
-            margin: 0 10rem;
+            margin: 10rem 4rem;
         }
 
         iframe {
@@ -152,12 +152,71 @@
             }
         }
 
+        #intro-fig {
+            position: relative;
+        }
+
+        #cinta {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            z-index: 2;
+            color: white;
+            padding: 1rem;
+        }
+        #intro-video {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        .overlay-2 {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            background-color: rgba(0, 0, 0, 0.09);
+            z-index: 1;
+            position: absolute;
+        }
+
     </style>
     <script src="https://unpkg.com/scrollama"></script>
 </head>
 
 <body>
     <main>
+        <section id="intro" class="scrolly">
+            <figure id="intro-fig" class="figure__full">
+                <div class="overlay"></div>
+                <img src="" class="image__full"></div>
+
+
+            </figure>
+            <div id="cinta">
+                <div style="margin: 2rem 1rem">
+                    <h1 style="text-align:center">ChatGPT: Chatbots y el poder del lenguaje</h1>
+                    <h3 style="text-align:right">Por: Nicaela León</h3>
+                </div>
+            </div>
+
+        </section>
 
         <section class="scrolly">
             <figure class="figure__full">
@@ -171,7 +230,7 @@
         </section>
         <section class="scrolly">
             <figure class="figure__full">
-                <img src="FONDOS/8.png" class="image__full">
+                <img src="FONDOS/8.png" class="image__center">
             </figure>
             <article class="article__center">
                 <div class="step" data-step="1">
@@ -221,7 +280,7 @@
 
         <section class="scrolly">
             <figure class="figure__full">
-                <img src="FONDOS/9.png" class="image__full">
+                <img src="FONDOS/9.png" class="image__center">
             </figure>
             <article class="article__center">
                 <div class="step" data-step="1">
@@ -275,7 +334,7 @@
 
         <section class="scrolly">
             <figure class="figure__full">
-                <img src="FONDOS/12.png" class="image__full">
+                <img src="FONDOS/12.png" class="image__center">
             </figure>
             <article class="article__center">
                 <div class="step" data-step="1">
@@ -286,6 +345,8 @@
                 </div>
             </article>
         </section> 
+
+        <section class="scrolly">
         <figure class="figure__full">
             <img src="FONDOS/18.png" class="image__full">
         </figure>
@@ -301,13 +362,14 @@
 
     <section class="scrolly">
         <figure class="figure__full">
-            <img src="FONDOS/16.png" class="image__full">
+            <img src="FONDOS/16.png" class="image__center">
         </figure>
         <article class="article__center">
             <div class="step" data-step="1">
                 <p> Un ejemplo concreto de esto es el caso del bot “Tay”, llamado así por el acrónimo “Thinking About You”, creado por Microsoft en el 2016 y lanzado oficialmente a través de Twitter. Tay fue entrenado con las conversaciones en línea de jóvenes entre 18 a 24 años de edad y solo estuvo disponible por 8 horas y después lo dieron de baja.  </p>
             </div>
         </article>
+    </section>
     
     <section class="scrolly">
             <figure class="figure__full">
@@ -321,7 +383,7 @@
     </section>
 
         <section class="scrolly text-block">
-            <article>
+            <article style="margin-top: 10rem ">
                 <h1>Bibliografía</h1>
               <p>Bender, E. (2021). On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?</p>
               <p>Brown, T. (2020). In Advances in Neural Information Processing.</p>
@@ -332,7 +394,6 @@
               <p>Warstadt, A. &  Bowman, S. (2022) What Artificial Neural Networks Can Tell Us About Human Language Acquisition.</p>
             </article>
         </section>
-S
     </main>
 
     <script>
